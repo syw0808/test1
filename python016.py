@@ -1,6 +1,10 @@
 #! /usr/bin/env python
+import sys
 
+f=sys.argv[1]
 
-with open("read_sample.txt","r") as handle :
+with open(f,"r") as handle :
     for line in handle :
+        if line.startswith(">"):
+            continue
         print(line.strip())
