@@ -17,3 +17,6 @@ total = 0
 for k, v in dic.items():
     total+= v
 print(total)
+
+f2=open("write_sample.txt","w")
+f2.write(str(total))
